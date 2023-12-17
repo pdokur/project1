@@ -27,5 +27,4 @@ void display()
     printf("hello from varable.c file\n");
     printf("x = %d\n",x);
 }
-
 */
