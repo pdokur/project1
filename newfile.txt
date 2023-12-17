@@ -1,1 +1,29 @@
-testing the git 
+
+Absolutely, let's simplify it further:
+
+**example.h:**
+#ifndef EXAMPLE_H
+#define EXAMPLE_H
+void printMessage();
+#endif // EXAMPLE_H
+
+**example.c:**
+#include "example.h"
+#include <stdio.h>
+void printMessage() {
+    printf("Hello from the example header file!\n");
+}
+
+**main.c:**
+#include "example.h"
+int main() {
+    printMessage();
+    return 0;
+}
+
+In this simple example:
+- `example.h` declares a function `printMessage`.
+- `example.c` defines the `printMessage` function.
+- `main.c` includes `example.h` and uses the `printMessage` function.
+The `#ifndef`, `#define`, and `#endif` in `example.h` act as include guards to prevent double inclusion.
+When you run `main.c`, it should print "Hello from the example header file!" to the console.
